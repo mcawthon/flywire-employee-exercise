@@ -43,6 +43,11 @@ public class EmployeeService {
         }
     }
 
+    //Returns all employees
+    public List<Employee> getEmployees() {
+        return employees;
+    }
+
     // Returns a list of active employees sorted by last name
     public List<Employee> getActiveEmployeesSortedByLastName() {
         return employees.stream()
